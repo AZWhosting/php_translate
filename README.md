@@ -7,7 +7,7 @@ PHP Translate est une bibliothèque simple pour ajouter la prise en charge des t
 Pour installer cette bibliothèque via Composer, exécutez la commande suivante dans votre terminal :
 
 ```bash
-composer require your-username/php_translate
+composer require azwhosting/php_translate
 ```
 
 ## Utilisation
