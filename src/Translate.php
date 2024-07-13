@@ -17,7 +17,12 @@ class Translate
     private function startSession()
     {
         if (session_status() == PHP_SESSION_NONE) {
-            session_start();
+            session_start([
+                'cookie_lifetime' => 86400,
+                'cookie_secure' => true,
+                'cookie_httponly' => true
+            ]);
+            session_regenerate_id(true); // Régénérer l'identifiant de session
         }
     }
 
@@ -77,5 +82,4 @@ class Translate
         return $translator->translate($key);
     }
 }
-
-
+?>
