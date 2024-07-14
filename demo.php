@@ -1,6 +1,6 @@
 <?php
-// Inclure la classe Translate
-require 'src/Translate.php';
+// Inclure l'autoloader de Composer
+require 'vendor/autoload.php';
 
 // Initialiser l'objet Translate global
 use PhpTranslate\Translate;
@@ -28,4 +28,4 @@ $translator = new Translate();
     <p><?= Translate::__('goodbye') ?></p>
 
 </body>
-</html> 
+</html>

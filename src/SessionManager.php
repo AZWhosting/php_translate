@@ -1,5 +1,4 @@
 <?php
-
 namespace PhpTranslate;
 
 class SessionManager

@@ -74,4 +74,3 @@ class Translate
         return $translator->translate($key);
     }
 }
-?>
