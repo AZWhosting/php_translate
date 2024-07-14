@@ -80,6 +80,7 @@ composer require azwhosting/php_translate
         <p><?= Translate::__('hello world') ?></p>
         <p><?= Translate::__('welcome') ?></p>
         <p><?= Translate::__('goodbye') ?></p>
+
     </body>
     </html>
     ```
@@ -95,6 +96,10 @@ php_translate
 │   └── fr_lang.php
 ├── src
 │   └── Translate.php
+├── tests
+│   └── TranslateTest.php
+├── vendor
+│   └── autoload.php
 ├── index.php
 ├── composer.json
 └── README.md
@@ -130,6 +135,42 @@ Pour ajouter plus de traductions, il suffit de modifier les fichiers de langue e
       // Ajoutez plus de traductions ici
   ];
   ```
+
+### Exécution des Tests
+
+Ce projet utilise PHPUnit pour les tests unitaires. Pour exécuter les tests, suivez les étapes ci-dessous :
+
+### Installation des dépendances de développement
+
+Si ce n'est pas déjà fait, installez les dépendances de développement :
+
+```bash
+composer install
+```
+
+### Exécution des tests
+
+Pour exécuter tous les tests, utilisez la commande suivante :
+
+```bash
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests
+```
+
+### Résultats des tests
+
+Vous devriez voir une sortie indiquant le nombre de tests et d'assertions passés. Par exemple :
+
+```
+PHPUnit 11.2.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.2.12
+
+......                                                              6 / 6 (100%)
+
+Time: 00:00.045, Memory: 6.00 MB
+
+OK (6 tests, 12 assertions)
+```
 
 ## Contributions
 

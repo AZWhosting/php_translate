@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"TranslateTest::testTranslateEnglish":0.008,"TranslateTest::testTranslateFrench":0,"TranslateTest::testInvalidLanguage":0.001,"TranslateTest::testMissingTranslation":0,"TranslateTest::testLanguagePersistenceInSession":0.001,"TranslateTest::testAdditionalLanguage":0.018}}
