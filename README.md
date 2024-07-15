@@ -95,6 +95,7 @@ php_translate
 │   ├── en_lang.php
 │   └── fr_lang.php
 ├── src
+│   ├── SessionManager.php
 │   └── Translate.php
 ├── tests
 │   └── TranslateTest.php
